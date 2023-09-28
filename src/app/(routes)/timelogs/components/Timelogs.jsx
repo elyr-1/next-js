@@ -1,16 +1,17 @@
-"use client" 
+"use client";
 
-import { useState } from 'react';
-import PendingTable from './PendingTable';
-import ApprovedTable from './ApprovedTable';
+import { useState } from "react";
+import PendingTable from "./PendingTable";
+import ApprovedTable from "./ApprovedTable";
 
 const Timelogs = () => {
-    const [activeTab, setActiveTab] = useState('pending');
+  const [activeTab, setActiveTab] = useState("pending");
 
-    return (
-        <>
-            {/* Search */}
-            <div className="w-full pb-4">
+  return (
+    <>
+      <h1>Timlogs</h1>
+      {/* Search */}
+      {/* <div className="w-full pb-4">
                 <div className="flex justify-end gap-2">
                 <div className="relative">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
@@ -26,11 +27,11 @@ const Timelogs = () => {
                     />
                 </div>
                 </div>
-            </div>
-            {/* Tabs */}
-            <div className="bg-white sm:rounded-lg shadow">
-                {/* Tab buttons */}
-                <div className="mb-4 border-b border-gray-200 dark:border-gray-700 bg-gray-50 sm:rounded-t-lg">
+            </div> */}
+      {/* Tabs */}
+      {/* <div className="bg-white sm:rounded-lg shadow"> */}
+      {/* Tab buttons */}
+      {/* <div className="mb-4 border-b border-gray-200 dark:border-gray-700 bg-gray-50 sm:rounded-t-lg">
                     <ul className="flex flex-wrap -mb-px text-md font-medium text-center justify-center">
                         <li className="mr-2" onClick={() => setActiveTab('pending')}>
                             <button
@@ -51,9 +52,9 @@ const Timelogs = () => {
                             </button>
                         </li>
                     </ul>
-                </div>
-                {/* Tab Content */}
-                <div>
+                </div> */}
+      {/* Tab Content */}
+      {/* <div>
                     <div className={`p-0 ${activeTab === 'pending' ? '' : 'hidden'}`}>
                         <PendingTable />
                     </div>
@@ -61,9 +62,9 @@ const Timelogs = () => {
                         <ApprovedTable />
                     </div>
                 </div>
-            </div>
-        </>
-    );
-}
+            </div> */}
+    </>
+  );
+};
 
 export default Timelogs;
